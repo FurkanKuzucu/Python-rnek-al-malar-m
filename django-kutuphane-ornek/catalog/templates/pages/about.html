@@ -1,0 +1,45 @@
+
+{%extends 'pages/layout.html'%}
+{%block content%}
+
+    <div id="menu">
+        <ul>
+            <li class="active"><a href="{%url 'index'%}" accesskey="1" title="">Anasayfa</a></li>
+            
+            <li><a href="{%url 'about'%}" accesskey="2" title="">Hakkımızda</a></li>
+            <li><a href="{%url 'save'%}" accesskey="3" title="">Kitap arama</a></li>
+            <li><a href="{%url 'search'%}" accesskey="4" title="">Kayıt</a></li>
+            
+        </ul>
+    </div>
+    <!-- end #menu -->
+    <div>
+        <div id="logo">
+            <h1><a href="#">Aquaria</a></h1>
+            <h2><a href="http://www.freecsstemplates.org/">HTML CSS Örnekleri</a></h2>
+        </div>
+        <div id="banner"><a href="#">Lorem ipsum dolor amet veroeros!</a></div>
+    </div>
+    <!-- end #header -->
+    <div >
+        <div>
+            <div align="center">
+                <h1 class="title">Hoşgeldiniz!</h1>
+                <div class="story">
+                    <p>Kütüphanemize hoş geldiniz. </p>
+                </div>
+            </div>
+            <div>
+                <img style="display: block; margin: auto;" src="/static/about.jpg" alt="Cv" width="800" height="1600">
+            </div>
+            
+        <!-- end #sidebar -->
+        <div style="clear: both;">&nbsp;</div>
+    </div>
+    <!-- end #page -->
+    <div id="footer">
+        <p id="legal">Furkan Yaşar Kuzucu</p>
+        <p id="links">Örnek</p>
+    </div>
+    <!-- end #footer -->
+{%endblock%}

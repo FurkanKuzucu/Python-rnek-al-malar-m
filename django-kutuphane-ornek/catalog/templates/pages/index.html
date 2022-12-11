@@ -1,0 +1,95 @@
+
+{%extends 'pages/layout.html'%}
+{%block content%}
+
+    <div id="menu">
+        <ul>
+            <li class="active"><a href="{%url 'index'%}" accesskey="1" title="">Anasayfa</a></li>
+            
+            <li><a href="{%url 'about'%}" accesskey="2" title="">Hakkımızda</a></li>
+            <li><a href="{%url 'save'%}" accesskey="3" title="">Kitap arama</a></li>
+            <li><a href="{%url 'search'%}" accesskey="4" title="">Kayıt</a></li>
+            
+        </ul>
+    </div>
+    <!-- end #menu -->
+    <div id="header">
+        <div id="logo">
+            <h1><a href="#">Aquaria</a></h1>
+            <h2><a href="http://www.freecsstemplates.org/">HTML CSS Örnekleri</a></h2>
+        </div>
+        <div id="banner"><a href="#">Lorem ipsum dolor amet veroeros!</a></div>
+    </div>
+    <!-- end #header -->
+    <div id="page">
+        <div id="content">
+            <div class="post">
+                <h1 class="title">Hoşgeldiniz!</h1>
+                <div class="story">
+                    <p>Kütüphanemize hoş geldiniz. </p>
+                </div>
+                
+            </div>
+            <div class="post boxed">
+                <h2 class="title">Örnekler</h2>
+                <div class="story">
+                    <p><strong></strong>Kütüphane Dünyası eğitim teknolojileri alanında faaliyet göstermek ve toplum gelişimine katkı sunmak amacıyla bir eğitim girişimi olarak kurulmuştur. Bu amaçların gerçekleşmesi için çocuk, genç ve ebeveynlerin gelişimleri kapsamında; çocuk kitapları, akıl ve zekâ oyunları, dikkat güçlendirme ve robotik kodlama setleri gibi ürünleri temin etmekte ve kutuphane.com.tr üzerinden müşterilerine ulaştırmaktadır. </p>
+                    <blockquote>
+                        <p>Kütüphane Dünyası eğitim teknolojileri alanında faaliyet göstermek ve toplum gelişimine katkı sunmak amacıyla bir eğitim girişimi olarak kurulmuştur. Bu amaçların gerçekleşmesi için çocuk, genç ve ebeveynlerin gelişimleri kapsamında; çocuk kitapları, akıl ve zekâ oyunları, dikkat güçlendirme ve robotik kodlama setleri gibi ürünleri temin etmekte ve kutuphane.com.tr üzerinden müşterilerine ulaştırmaktadır.</p>
+                    </blockquote>
+                    <h3>Yapabilecekleriniz</h3>
+                    <ol>
+                        <li>Kitap aratabilir<li>
+                        <li>Ekleyebilir<li>
+                        <li>İnceleyebilirsiniz<li>
+                    </ol>
+                </div>
+                <form class="meta" action= "datetime">
+                    <p class="date">Tarih:{{datetime}}</p>
+                    <p class="file">Filed under <a href="#">Uncategorized</a> | <a href="#">Edit</a> | <a href="#">28 Comments</a></p>
+                </form>
+            </div>
+        </div>
+        <!-- end #content -->
+        <div id="sidebar">
+            <ul>
+                <li>
+                    <h2>Türler</h2>
+                    <ul>
+                        <li class="first"><a href="#">Roman</a> <i>(2)</i></li>
+                        <li><a href="#">Hikaye</a> <i>(31)</i></li>
+                        <li><a href="#">Bilimsel</a> <i>(30)</i></li>
+                        
+                    </ul>
+                </li>
+                <li>
+                    <h2>Kategoriler</h2>
+                    <ul>
+                        <li class="first"><a href="#"></a></li>
+                        <li><a href="#">Kitap</a></li>
+                        <li><a href="#">Hikaye</a></li>
+                        <li><a href="#">Roman</a></li>
+                        <li><a href="#">Ansiklopedi</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>Alt Kategoriler</h2>
+                    <ul>
+                        <li class="first"><a href="#">Konum</a></li>
+                        <li><a href="#">Çalışan</a></li>
+                        <li><a href="#">Bilgi</a></li>
+                        <li><a href="#">İletişim</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- end #sidebar -->
+        <div style="clear: both;">&nbsp;</div>
+    </div>
+    <!-- end #page -->
+    <div id="footer">
+        <p id="legal">Furkan Yaşar Kuzucu</p>
+        <p id="links">Örnek</p>
+    </div>
+    <!-- end #footer -->
+{%endblock%}
