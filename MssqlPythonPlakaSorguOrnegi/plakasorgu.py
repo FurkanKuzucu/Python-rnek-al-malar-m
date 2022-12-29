@@ -14,7 +14,7 @@ def sql():
     imlec.execute("SELECT plaka FROM plaka")
     
     plaka=imlec.fetchall()
-    #İlk for sql üzerinden çekilen verileri liste şeklinde sıralıyor('06T06',) şeklinde sıralıyor ikinci for ise listeyi açarak tek tek 06T06 şeklinde sıralamamıza yarıyor.
+    #İlk for sql üzerinden çekilen verileri liste şeklinde sıralıyor('06T06',) ikinci for ise listeyi açarak tek tek 06T06 şeklinde sıralamamıza yarıyor.
     for i in plaka:
         for j in i:
             #Entry içine kullanıcı tarafından girilen plaka ile veri tabanından çekilen plaka eşleşir ise name isimli def fonksiyonuna kullanıcının girdiği plaka gönderilir.
